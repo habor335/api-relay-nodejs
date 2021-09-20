@@ -39,8 +39,8 @@ const updateContent = async (req) => {
 // })
 
 router.post("/", async (req, res) => {
-  await updateContent(req)
-  res.status(200)
+  const response = await updateContent(req)
+  res.end()
 })
 
 export default router

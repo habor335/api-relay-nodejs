@@ -40,7 +40,7 @@ const updateContent = async (req) => {
 
 router.post("/", async (req, res) => {
   const response = await updateContent(req)
-  res.json(response)
+  //res.json(response)
 })
 
 export default router
